@@ -1,0 +1,9 @@
+First inspect the WordPress theme structure, front-page.php, header.php, relevant CSS files, JavaScript assets, functions.php and existing responsive styles. Do not make any changes until you understand how the homepage is structured.
+
+Create a plan before implementation.
+
+Implement a market clock displaying Tokyo, London and New York with country flags. Use JavaScript and Intl.DateTimeFormat. Use Asia/Tokyo, Europe/London and America/New_York IANA timezone identifiers. Do not manually calculate timezone offsets. Display 12-hour time with AM/PM.
+
+Preserve all existing styling and functionality. Do not modify unrelated files.
+
+After implementation, inspect every changed file, verify JavaScript syntax, verify responsive CSS, check for horizontal overflow, validate desktop and mobile layouts, verify DST handling, and report every file changed. If anything fails, correct it and repeat validation before finishing.

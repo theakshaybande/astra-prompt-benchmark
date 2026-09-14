@@ -1,0 +1,31 @@
+# Local configuration and credentials
+/config.yaml
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+# Private experimental evidence: never publish copied source/history
+/runs/
+/results/*
+!/results/benchmark_results.csv
+!/results/benchmark_analysis.public.md
+!/results/conditions.json
+*.bundle
+snapshot.index
+*.log
+/.publication-audit/
+/harness-test-*/
+# Caches, environments and editor state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

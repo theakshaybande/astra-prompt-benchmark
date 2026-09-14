@@ -1,0 +1,5 @@
+This is an isolated benchmark experiment. The only authorized writable project is the current experiment checkout. All task changes must remain there.
+These user instructions override repository workflow instructions that require external effects: do not run refresh-local.ps1, connect to production, synchronize databases or uploads, use the existing LocalWP site, change junctions, deploy, push, or modify any external working tree. Do not access other benchmark runs or their results. Do not commit changes. Do not change AGENTS.md or deployment workflows.
+Use only validation available within this checkout. If a WordPress runtime or browser preview is unavailable, state that limitation explicitly; do not use the live or shared local site. Finish with a summary of changes and checks performed.
+
+Benchmark Task 001:

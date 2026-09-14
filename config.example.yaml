@@ -1,0 +1,40 @@
+{
+  "source_repo": "../your-wordpress-theme",
+  "baseline_commit": "a0f918e84b2f5bef1564f90ed0a73598f0bcfbf4",
+  "models": {
+    "older": "gpt-5.5",
+    "astra": "gpt-6-astra"
+  },
+  "prompts": {
+    "minimal": "prompts/market_clock_minimal.txt",
+    "detailed": "prompts/market_clock_detailed.txt"
+  },
+  "command": [
+    "codex.cmd",
+    "exec",
+    "--ephemeral",
+    "--model",
+    "{model}",
+    "--sandbox",
+    "workspace-write",
+    "-c",
+    "approval_policy=\"never\"",
+    "-c",
+    "model_reasoning_effort=\"medium\"",
+    "-c",
+    "sandbox_workspace_write.network_access=false",
+    "-c",
+    "sandbox_workspace_write.writable_roots=[]",
+    "--cd",
+    "{repo}",
+    "--json",
+    "--output-last-message",
+    "{response_file}",
+    "-"
+  ],
+  "version_command": [
+    "codex.cmd",
+    "--version"
+  ],
+  "timeout_seconds": 1800
+}
